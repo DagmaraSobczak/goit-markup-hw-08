@@ -1,0 +1,81 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 321px;
+
+    @mixin ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+  @include ul;
+  }
+  .contact-mail {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 161px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);;
+  
+        &:hover svg {
+        fill: var(--blue);
+        cursor: pointer;
+         }
+        &:hover a {
+        color: var(--blue);
+        }
+    }
+
+    .contact__icon {
+        gap: 10px;
+        fill: rgba(117, 117, 117, 1);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubic-bezier);;
+      
+     &--mail {
+        width: 16px;
+        height: 12px;
+      }
+
+      &--phone {
+        width: 10px;
+        height: 16px;
+      }
+}
+.contact-phone {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 130px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);;
+
+      &:hover svg {
+       fill: var(--blue);
+      cursor: pointer;
+       }
+
+      &:hover a {
+      color: var(--blue);
+      }
+}
+
+
+
+
+
+

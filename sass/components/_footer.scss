@@ -1,0 +1,53 @@
+.footer {
+    background:var(--footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+     }
+     .footer-position {
+      display: flex;
+      justify-content: space-between;
+      width: 1200px;
+      gap: 70px;
+    }
+    
+      .footer-contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        width: 246px;
+        
+        @mixin ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+      @include ul;
+    
+      &__item {
+        color: var(--white);
+        padding-top: 20px;
+        display: flex;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        font-size: 14px;
+      }  
+    }
+    .footer-social {
+      width: 206px;
+      height: 44px;
+      align-items: center;
+      color: var(--white);
+   
+    &__tittle {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+     }

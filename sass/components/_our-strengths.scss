@@ -1,0 +1,47 @@
+.our-strengths {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+
+    @mixin ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+  @include ul;
+
+    &__card {
+      background: var(--light-grey);
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+
+    &__icon {
+      width: 70px;
+      height: 70px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 100px;
+      margin-left: 100px;
+    }
+  &__tittle {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+  &__description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--gray);
+    } 
+
+
+ }

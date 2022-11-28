@@ -1,0 +1,65 @@
+.projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    flex-basis: calc((100% - 60px) / 3);
+
+    @mixin ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+  @include ul;
+  }
+  .project-card {
+    margin: 0;
+  
+  
+      &--border {
+        background: var(--white);
+        border: 1px solid #eeeeee;
+        margin-bottom: 30px;
+      }
+      
+      &__description {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      &__description-span {
+        color: #757575;
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+        font-size: 16px;
+      }
+  }
+  .project-box {
+    position: relative;
+    overflow: hidden;
+    width: 370px;
+    height: 294px;
+
+    @mixin img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    @include img;
+  }
+  .project-box-hover:hover {
+    box-shadow: var(--box-shadow); 
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);;
+
+        &:hover .overlay {
+        transform: translateY(0);
+        transition: transform 250ms ease;
+        }
+}
+
+    

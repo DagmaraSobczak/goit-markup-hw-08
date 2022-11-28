@@ -1,0 +1,94 @@
+.checkbox {
+    width: 420px;
+    height: 24px;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+  
+      &__text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: var(--gray);
+      text-align: center;
+      display: block;
+      width: 397px;
+      top: 0;
+      left: 0;
+      margin-left: 22px;
+      }
+
+      &__text-span {
+      color: var(--modal-blue);
+      text-decoration: underline;
+        }
+      &__input {
+      position: relative;
+      cursor: pointer;
+      width: 0;
+      height: 0;
+      opacity: 0;}
+  
+
+  
+      &__icon {
+          width: 16px;
+          height: 15px;
+          fill: rgba(255, 255, 255, 1);
+          background-color: rgba(255, 255, 255, 1);
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+  }
+
+
+  
+
+  .checkmark {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border: 0.5px solid rgba(33, 33, 33, 1);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);;
+  
+  
+        &::after{
+        content: url(../image/check.svg);
+        width: 16px;
+        height: 15px;
+        position: absolute;
+        opacity: 0;
+        display: block;
+        fill: rgba(255, 255, 255, 1);
+        background-color: var(--modal-blue);
+ 
+            .checkbox input:checked ~ & {
+              opacity: 1;
+              }
+
+  } 
+  }
+
+  
+  .button--input {
+    text-align: center;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  .modal-icon5 {
+    width: 16px;
+    height: 15px;
+    fill: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 0px;
+    left: 0px;}

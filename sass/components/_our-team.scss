@@ -1,0 +1,40 @@
+.section-our-team {
+  padding-top: 94px;
+  background-color: rgba(245, 244, 250, 1);
+
+
+}
+.our-team {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+  }
+
+  .our-team-card {
+    background: var(--white);
+   box-shadow:  var(--box-shadow);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    text-align: center;
+
+  
+    &__team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    }
+    &__team-job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8px;
+    letter-spacing: 0.03em;
+    color: var(--gray);
+    }
+
+}

@@ -1,0 +1,18 @@
+
+    .contact-link {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        line-height: 1.14;
+        color: var(--gray);
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 1.7;
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubic-bezier);
+        
+        &:hover {
+          color:var(--blue);
+          cursor: pointer;
+        }
+      }

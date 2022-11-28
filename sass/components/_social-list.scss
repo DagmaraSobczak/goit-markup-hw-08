@@ -1,0 +1,49 @@
+.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 206px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    margin-right: 32px;
+    margin-left: 32px;
+  
+      &__icon {
+      width: 44px;
+      height: 44px;
+      fill: var(--icon-border);
+      border-radius: 50%;
+      transition-property: fill background-color;
+      transition-duration: 250ms;
+      transition-timing-function: var(--cubic-bezier);
+            
+            &:hover {
+            color: var(--blue);
+            fill: var(--white);
+            background-color: var(--blue);
+            cursor: pointer;
+            }
+      }
+      &__icon--our-team {
+          fill: var(--contact-icon);
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+      &__icon--footer {
+          margin-top: 20px;
+          background-color: rgba(255, 255, 255, 0.1);
+          fill: rgba(255, 255, 255, 1);
+          transition-property: fill background-color;
+          transition-duration: 250ms;
+          transition-timing-function: var(--cubic-bezier);
+            
+              &:hover {
+              color: var(--blue);
+              fill: var(--white);
+              background-color: var(--blue);
+              cursor: pointer;
+            }
+      }
+
+}

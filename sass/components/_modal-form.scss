@@ -1,0 +1,108 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 342px;
+  
+  &__label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-color: rgba(33, 33, 33, 0.2);
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+          &:hover svg{
+          fill: var(--modal-blue);
+          }
+          &:focus-within svg{
+          fill: var(--modal-blue);
+          }
+      
+          &:hover,
+          &:focus-within{
+          border-color: var(--modal-blue);
+          }
+  
+   }
+  
+  &__input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    left: 0px;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 4px;
+    outline: none;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);;
+   
+      &:hover,
+      &:focus-within{
+      border-color: var(--modal-blue);
+      }
+    
+}
+  
+      &__icon {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      z-index: 2;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: var(--cubic-bezier);;
+     }
+  
+      &__icon1 {
+        top: 104px;
+        left: 50px;
+      }
+      
+      &__icon2 {
+        top: 172px;
+        left: 52px;
+      }
+      
+      &__icon3 {
+        top: 240px;
+        left: 52px;
+      }
+  
+  &__comments {
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    resize: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 4px;
+    border-color: rgba(33, 33, 33, 0.2);
+    margin-bottom: 20px;
+    outline: none;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);;
+    
+        &:hover,
+        &:focus{
+        border-color: var(--modal-blue);
+        }
+}
+  
+
+}
+
