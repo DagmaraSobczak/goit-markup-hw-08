@@ -19,12 +19,15 @@
     <section class="section">
       <div class="header">
         <a class="logo" href="./index.html"> <strong>Web</strong><span class="logo--header">Studio</span></a>
+                <svg class="mobile-menu__button">
+          <use href="./image/icons.svg#icon-menu_24px"> </use>
+        </svg>
         <ul class="nav ">
           <li><a class="nav__menu nav__menu--active" href="./index.html">Agencja</a></li>
           <li><a class="nav__menu" href="./portfolio.html">Portfolio</a></li>
           <li><a class="nav__menu" href="/#Kontakt">Kontakt</a></li>
         </ul>
-        <ul class="contact ">
+        <ul class="contact">
           <li >
             <div class="contact-mail"><svg class="contact__icon contact__icon--mail">
                 <use href="./image/icons.svg#icon-envelope-1"></use>
@@ -37,11 +40,34 @@
                 <use href="./image/icons.svg#icon-smartphone"></use>
               </svg><a class="contact-link" href="tel:+48111111111"> +48 111 111 111</a></div>
           </li>
-        </ul>
+               
+                </ul>
+                  
       </div>
-      <div class="mobile-menu d-none">
-        <button class="toggle-menu">X</button>
-      </div>
+      
+      <div class="mobile-menu ">
+              <button class="toggle-menu">X</button>
+        <ul class="mobile-menu-nav"> 
+          <li class="mobile-menu_nav__item">Agencja</li>
+          <li class="mobile-menu_nav__item">Portfolio</li>
+          <li class="mobile-menu_nav__item">Kontakt</li>
+          </ul>
+                              
+                <ul class="mobile-menu-contact-list">
+                  <li class="mobile-menu-contact-list__item">
+                  <a class=" mobile-menu-contact-list__item mobile-menu-contact-list__item--phone" href="tel:+48111111111"> +48 111 111 111</a></li>
+                  <li class="mobile-menu-contact-list__item">
+                    <a class="mobile-menu-contact-list__item mobile-menu-contact-list__item--mail" href="mailto:info@devstudio.com"> info@devstudio.com</a> </li>
+                </ul>
+              
+              <ul class="menu-mobile-social">
+                <li ><a class="menu-mobile-social__item" href="">Instagram</a></li>
+                <li ><a class="menu-mobile-social__item" href="">Twitter</a></li>
+                <li ><a class="menu-mobile-social__item" href="">Facebook</a></li>
+                <li><a  class="menu-mobile-social__item" href="">Linkedin</a></li>
+              </ul>
+        
+              </div>
       <div class="baner">
         <h1 class="baner__title">EFEKTYWNE ROZWIĄZANIA <br>DLA WASZEGO BIZNESU</h1>
         <button class="button button--baner" type="button" data-modal-open>Zamów usługę</button>

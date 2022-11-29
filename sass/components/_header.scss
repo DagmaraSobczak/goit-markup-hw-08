@@ -4,13 +4,14 @@
   padding-right: 15px;
   display: flex;
   align-content: center;
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
   align-items: baseline;
   border-bottom: 1px solid var(--border-bottom);
 }
  @media screen and (min-width: 768px) {
   .header {
     width: 768px;
+   
   }
  }
 
@@ -22,7 +23,25 @@
   
 }
 
+.mobile-menu__button {
+  fill: var(--blue);
+  width: 24px;
+  height: 16px;
+  padding-top: 22px;  
+  padding-left: 23px;
+}
 
+@media screen and (max-width: 767px ){
+  .mobile-menu__button {
+  fill: var(--blue);
+  width: 24px;
+  height: 16px;
+  padding-top: 22px;  
+  padding-left: 23px;
+  padding-right: 276px;
+
+}
+}
 
 
 
