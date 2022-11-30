@@ -1,6 +1,6 @@
 const menuOverlay = document.querySelector('.mobile-menu');
-const closeMenuButton = document.querySelector('.toggle-menu');
-const openMenuBtn = document.querySelector('.header__link-logo');
+const closeMenuButton = document.querySelector('.mobile-menu-btn');
+const openMenuBtn = document.querySelector('.mobile-menu__button');
 
 openMenuBtn.addEventListener('click', e => {
   menuOverlay.classList.remove('d-none');
