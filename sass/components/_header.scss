@@ -25,18 +25,12 @@
   
 }
 
-.mobile-menu__button {
-  fill: var(--blue);
-  width: 24px;
-  height: 16px;
-  padding-top: 22px;  
-  padding-left: 23px;
-  
-}
 
+ 
+  
 @media screen and (max-width: 767px ){
   .mobile-menu__button {
-  fill: var(--blue);
+ fill: var(--blue);
   width: 24px;
   height: 16px;
   padding-top: 22px;  
