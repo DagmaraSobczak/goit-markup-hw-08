@@ -12,7 +12,7 @@
 }
  @media screen and (min-width: 768px) {
   .header {
-    width: 768px;
+    width: 100%;
    
   }
  }
@@ -20,7 +20,7 @@
 
  @media screen and (min-width: 1200px) {
   .header{
-  width: 1200px;
+  width: 100%;
   }
   
 }
@@ -33,9 +33,10 @@
  fill: var(--blue);
   width: 24px;
   height: 16px;
-  padding-top: 22px;  
-  padding-left: 23px;
-  padding-right: 276px;
+  padding-top: 0; 
+  padding-left: 0;
+  padding-right: 0;
+ 
 
 }
 }
