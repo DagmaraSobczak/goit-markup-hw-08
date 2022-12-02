@@ -155,8 +155,12 @@
       <div class="our-team">
         <div class="our-team-card">
           <figure class="figure">
-            <img  class="img" src="image/product_designer.jpg" alt="uśmiechnięty mężczyzna w bordowej koszuli"  srcset="image/PD" width="370"
-              height="294" />
+            <picture>
+              <source srcset="./image/PDmobile.jpg 1x, ./image/PDmobile@2x.jpg 2x " media="(max-width: 767px)"  />
+            <source srcset="./image/PDtablet.jpg 1x, ./image/PDtablet@2x.png 2x " media="(min-width: 768px)" />
+            <source srcset="./image/product_designer.jpg 1x, ./image/PDdesktop@x2.jpg 2x" media="(min-width: 1200px)" />
+            <img  class="img" src="image/product_designer.jpg" alt="uśmiechnięty mężczyzna w bordowej koszuli" />
+            </picture>
             <figcaption class="our-team-card__team-name">Jon Doe<br /><span class="our-team-card__team-job">Product
                 Designer</span></figcaption>
           </figure>
@@ -177,7 +181,12 @@
         </div>
         <div class="our-team-card">
           <figure class="figure">
-            <img class="img" src="image/fronted_developer.jpg" alt="blondynka w z założonymi rękami" width="370" height="294" />
+            <picture>
+              <source srcset="./image/FDmobile.jpg 1x, ./image/FDmobile@2x.jpg 2x " media="(max-width: 767px)" />
+              <source srcset="./image/FDtablet.jpg 1x, ./image/FDtablet@2x.png 2x " media="(min-width: 768px)" />
+              <source srcset="./image/fronted_developer.jpg 1x, ./image/FDdesktopx2.jpg 2x" media="(min-width: 1200px)" />
+              <img class="img" src="image/fronted_developer.jpg" alt="blondynka w z założonymi rękami" />
+            </picture>
             <figcaption class="our-team-card__team-name">Jon Doe<br /><span class="our-team-card__team-job">Fronted
                 Developer</span></figcaption>
           </figure>
@@ -198,8 +207,13 @@
         </div>
         <div class="our-team-card">
           <figure class="figure">
-            <img  class="img" src="image/marketing.jpg" alt="mężczyzna w bialej koszuli" width="370" height="294" />
-            <figcaption class="our-team-card__team-name">Jon Doe<br /><span class="our-team-card__team-job">Fronted
+            <picture>
+              <source srcset="./image/Mmobile.jpg 1x, ./image/Mmobile@2x.jpg 2x " media="(max-width: 767px)" />
+              <source srcset="./image/Mtablet.jpg 1x, ./image/Mtablet@2x.png 2x " media="(min-width: 768px)" />
+              <source srcset="./image/marketing.jpg 1x, ./image/Mdesktopx2jpg 2x " media="(min-width: 1200px)" />
+              <img class="img" src="image/marketing.jpg" alt="mężczyzna w bialej koszuli" />
+            </picture>
+             <figcaption class="our-team-card__team-name">Jon Doe<br /><span class="our-team-card__team-job">Fronted
                 Developer</span></figcaption>
           </figure>
           <div class="social-list">
@@ -219,8 +233,13 @@
         </div>
         <div class="our-team-card">
           <figure class="figure">
-            <img  class="img" src="image/ui_designer.jpg" alt="mężczyzna z zarostem w czarnej koszulce" width="370" height="294" />
-            <figcaption class="our-team-card__team-name">Jon Doe<br /><span class="our-team-card__team-job">UI
+            <picture>
+            <source srcset="./image/UDmobile.jpg 1x, ./image/UDmobile@2x.png 2x " media="(max-width: 767px)" />
+            <source srcset="./image/UDtablet.jpg 1x, ./image/UDtablet@2x.png 2x " media="(min-width: 768px)" />
+            <source srcset="image/ui_designer.jpg 1x, ./image/UDdesktopx2jpg 2x " media="(min-width: 1200px)" />
+            <img class="img" src="image/ui_designer.jpg" alt="mężczyzna z zarostem w czarnej koszulce"  />
+            </picture>
+             <figcaption class="our-team-card__team-name">Jon Doe<br /><span class="our-team-card__team-job">UI
                 Designer</span></figcaption>
           </figure>
           <div class="social-list social-list__icon--our-team">
