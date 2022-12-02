@@ -1,31 +1,43 @@
-
-
-@media screen and (min-width:320px) {
 .baner {
-    height: 400px;
+    width: 100%;
     background: var(--baner-grey);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/image/Header\ mobile\ \ x1\ 480x400.jpg');
-    background-size: cover;
+        
+    background-size: 1600px 600px;
     background-repeat: no-repeat;
     background-position: center;
-
-
   
   &__title {
     font-style: normal;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+  }
+
+}
+
+
+
+@media screen and (max-width:767px) {
+.baner {
+    height: 400px;
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/image/Header\ mobile\ \ x1\ 480x400.jpg');
+    background-size: cover;
+    
+
+
+  
+  &__title {
+       font-size: 26px;
+    line-height: 1.62;
+    
   }
 
 }   
@@ -41,9 +53,19 @@
 
 @media screen and (min-width: 768px) {
   .baner{
+    height: 400px;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/image/Header tablet x1 768x400');
-  }
+      url('/image/Header tablet x1 768x400.jpg');
+  
+  
+  &__title {
+       font-size: 26px;
+    line-height: 1.62;
+    
+  }  
+}
+
+
 
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -62,12 +84,11 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+   
   
   &__title {
        font-size: 44px;
-    
+     line-height: 1.36;
   
   }
 
