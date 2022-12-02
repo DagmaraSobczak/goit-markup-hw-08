@@ -1,7 +1,4 @@
-@media screen and (max-width: 1199px){
 .checkbox {
-    width: 370px;
-    height: 24px;
     display: block;
     position: relative;
     margin-top: 20px;
@@ -10,13 +7,11 @@
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
-      font-size: 12px;
       line-height: 24px;
       letter-spacing: 0.03em;
       color: var(--gray);
       text-align: center;
       display: block;
-      width: 346px;
       top: 0;
       left: 0;
       margin-left: 22px;
@@ -94,7 +89,23 @@
     top: 0px;
     left: 0px;}
 
+  
+@media screen and (max-width: 1199px){
+.checkbox {
+    width: 370px;
+    height: 24px;
+   
+  
+      &__text {
+      font-size: 12px;
+      width: 346px;
+   
+      }
+    }
   }
+      
+
+  
 
 
 @media screen and (min-width: 1200px){
