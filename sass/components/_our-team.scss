@@ -1,3 +1,5 @@
+
+
 .section-our-team {
   padding-top: 94px;
   background-color: rgba(245, 244, 250, 1);
@@ -38,3 +40,29 @@
     }
 
 }
+
+@media screen and (max-width: 767px ){
+.section-our-team {
+  padding-top: 94px;
+}
+.our-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  
+  }
+
+  .our-team-card {
+    width: 450px;
+    
+
+}
+
+
+}
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px){}
