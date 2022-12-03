@@ -21,18 +21,13 @@
 
 }
 
-
-
 @media screen and (max-width:767px) {
 .baner {
     height: 400px;
      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('/image/Header\ mobile\ \ x1\ 480x400.jpg');
         max-width: 100%;
-    
-
-
-  
+      
   &__title {
        font-size: 26px;
     line-height: 1.62;

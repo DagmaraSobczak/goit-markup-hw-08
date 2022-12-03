@@ -17,6 +17,28 @@
       margin-left: 22px;
       }
 
+@media screen and (max-width: 1199px){
+.checkbox {
+    width: 370px;
+    height: 24px;
+      &__text {
+      font-size: 12px;
+      width: 346px;
+      }
+    }
+  }
+      
+@media screen and (min-width: 1200px){
+.checkbox {
+    width: 420px;
+    height: 24px;
+      &__text {
+      font-size: 14px;
+      width: 397px;
+            }
+      }
+    }
+
       &__text-span {
       color: var(--modal-blue);
       text-decoration: underline;
@@ -90,40 +112,7 @@
     left: 0px;}
 
   
-@media screen and (max-width: 1199px){
-.checkbox {
-    width: 370px;
-    height: 24px;
-   
-  
-      &__text {
-      font-size: 12px;
-      width: 346px;
-   
-      }
-    }
-  }
-      
 
-  
-
-
-@media screen and (min-width: 1200px){
-.checkbox {
-    width: 420px;
-    height: 24px;
-    
-  
-      &__text {
-       font-size: 14px;
-      width: 397px;
-      
-      }
- 
-    
-     }
-
-    }
   
 
  
