@@ -14,9 +14,24 @@
 
     &--footer {
     color: var(--white);
+    
     }
 
     &--header {
     color: var(--black)
     }
+}
+
+@media screen and (max-width: 767px ){
+.logo {
+  text-align: center;
+  margin-top: 53px;
+  margin-bottom: 20px;
+
+    &--footer {
+    color: var(--white);
+    
+    }
+
+}
 }
