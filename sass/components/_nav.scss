@@ -1,72 +1,72 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 254px;
+    align-items: center;
+    margin-top: 32px;
+    margin-right: 345px;
+    margin-bottom: 32px;
+    margin-left: 93px;
+
 @media screen and (max-width:767px){
 .nav{
     display: none;
 }
 }
 @media screen and (min-width:768px) {
-              .nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 282px;
-            align-items: center;
-            margin-top: 32px;
-            margin-right: 232px;
-            margin-bottom: 32px;
-            margin-left: 83px;
-            gap: 60px;
-        
-            @mixin ul {
-                list-style-type: none;
-                padding: 0;
-              }
-              
-            @include ul;
-        
-            &__menu {
-                font-size: 14px;
-                letter-spacing: 0.02em;
-                line-height: 1.14;
-                text-decoration: none;
-                color: var(--dark-grey);
-                transition-property: color;
-                transition-duration: 250ms;
-                transition-timing-function: var(--cubic-bezier);;
-              
-                    &:hover {
-                    color: var(--blue);
-                    cursor: pointer;
-              }
-            
-               &--active {
-               position: relative;
-                
-                    &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: -32px;
-                    left: 0;
-                    width: 58px;
-                    height: 4px;
-                    background-color: var(--blue);
-                    border-radius: 2px;
-                    }
-                }
-          }
-          }
+    .nav {
+    margin-right: 232px;
+    margin-left: 83px;
+     gap: 60px; }
     }
-   
-  
-  
-   @media screen and (min-width: 1200px) {
+        
+@media screen and (min-width: 1200px) {
  .nav {
        width: 254px;
         margin-right: 345px;
        margin-left: 93px;
-
-    
-
-    
-  }
+         }
   }
    
+
+    @mixin ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+    @include ul;
+
+    &__menu {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        line-height: 1.14;
+        text-decoration: none;
+        color: var(--dark-grey);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubic-bezier);;
+      
+            &:hover {
+            color: var(--blue);
+            cursor: pointer;
+      }
+    
+       &--active {
+       position: relative;
+        
+            &::after {
+            content: "";
+            position: absolute;
+            bottom: -32px;
+            left: 0;
+            width: 53px;
+            height: 4px;
+            background-color: var(--blue);
+            border-radius: 2px;
+            }
+        }
+  }
+  }
+
+
