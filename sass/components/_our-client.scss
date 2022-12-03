@@ -4,15 +4,53 @@
     justify-content: space-between;
     gap: 30px;
     margin: 0 auto;
+
+@media screen and (max-width: 767px ){
+.our-client {
+     flex-wrap: wrap;
+     width: 450px;
+  }
+}
+
+  
+@media screen and (min-width: 768px) {
+.our-client {
+    flex-wrap: wrap;
+    width: 738px;
+   }
+  }
+@media screen and (min-width: 1200px){
+.our-client {
+    flex-wrap: nowrap;
+    width: 1200px;
+}
+}
   
     &__item {
     border: 1px solid var(--icon-border);
     border-radius: 4px;
-    
     height: 92px;
     transition-property: border fill;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
+
+    @media screen and (max-width: 767px ){
+      &__item {
+      max-width: 210px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      &__item {
+      max-width: 226px;
+      }
+    }
+
+    @media screen and (min-width: 1200px){
+    &__item {
+      max-width: 170px;
+      }
+    }
+
       &:hover {
         border: 1px solid var(--blue);
         cursor: pointer;
@@ -37,86 +75,40 @@
     transition-timing-function: var(--cubic-bezier);
   }
 
-}
+
 
 @media screen and (max-width: 767px ){
-.our-client {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 450px;
-    margin: 0 auto;
-    
-  
-    &__item {
-      max-width: 210px;
-     
-      }
-      
-
     &__icon {
     margin-right: 67px;
     margin-left: 52px;
-   
-     }
+        }
 }
-}
-
-
-
 
 @media screen and (min-width: 768px) {
-.our-client {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 738px;
-    margin: 0 auto;
-    
-  
-    &__item {
-      max-width: 226px;
-     
-      }
-      
-
-    &__icon {
+       &__icon {
     margin-right: 60px;
     margin-left: 60px;
-   
-     }
+        }
 }
-}
-
-
-
 
 @media screen and (min-width: 1200px){
-
-.our-client {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-    
-  
-    &__item {
-      max-width: 170px;
-     
-      }
-      
-
     &__icon {
     margin-right: 32px;
     margin-left: 32px;
    
      }
 }
+
 }
+
+
+
+
+
+
+
+
+
 
 
 
