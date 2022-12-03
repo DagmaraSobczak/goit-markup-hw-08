@@ -1,48 +1,4 @@
 
-@media screen and (max-width: 1199px){
-.modal {
-    width: 450px;
-    height: 609px;
-    background: var(--white);
-    box-shadow: (--box-shadow); 
-    border-radius: 4px;
-    margin: auto;
-  
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-    &__tittle {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: var(--dark-grey);
-      margin-top: 40px;
-      margin-bottom: 12px;
-      width: 370px;
-    }
-
-    &__close-btn {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      cursor: pointer;
-      top: 8px;
-      right: 8px;
-      background-image: url(../image/close-black-18dp-2-1.svg);
-      background-position: center;
-      border: 0px solid rgba(0, 0, 0, 0.1);
-    }
-}
-
-}
-@media screen and (min-width: 1200px){
 .modal {
     width: 528px;
     height: 581px;
@@ -50,11 +6,16 @@
     box-shadow: (--box-shadow); 
     border-radius: 4px;
     margin: auto;
-  
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (max-width: 1199px){
+.modal {
+    width: 450px;
+    height: 609px;}
+  }
   
     &__tittle {
       font-family: "Roboto";
@@ -68,6 +29,11 @@
       margin-top: 40px;
       margin-bottom: 12px;
     }
+    @media screen and (max-width: 1199px){
+     &__tittle {
+          line-height: 30px;
+              }
+            }
 
     &__close-btn {
       position: absolute;
@@ -81,5 +47,14 @@
       background-position: center;
       border: 0px solid rgba(0, 0, 0, 0.1);
     }
-}
-}
+
+@media screen and (max-width: 1199px){
+    &__close-btn {
+      top: 8px;
+      right: 8px;
+         }
+        }
+        }
+
+
+
