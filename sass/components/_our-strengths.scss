@@ -59,7 +59,7 @@
         justify-content: center;
     align-content: space-between;
     gap: 30px;
-    width: 738px;
+    max-width: 738px;
     flex-wrap: wrap;
     flex-direction: row;
     flex-basis: calc((100% - 30px) / 2);
@@ -78,7 +78,7 @@
        background: var(--light-grey);
       border-radius: 4px;
       margin-bottom: 30px;
-      width: 354px;
+      max-width: 354px;
       flex-basis: calc((100% - 30px) / 2);
     }
 
@@ -101,7 +101,7 @@
     }
  
   &__description {
-      width: 354px;
+      max-width: 354px;
        font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
@@ -119,7 +119,7 @@
     justify-content: center;
     align-content: space-between;
     gap: 30px;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: nowrap;
 
@@ -134,7 +134,7 @@
       background: var(--light-grey);
       border-radius: 4px;
       margin-bottom: 30px;
-       width: 270px;
+       max-width: 270px;
     }
 
     &__icon {
@@ -159,7 +159,7 @@
       line-height: 1.71;
       letter-spacing: 0.03em;
       color: var(--gray);
-      width: 270px;
+      max-width: 270px;
       
    } 
 
