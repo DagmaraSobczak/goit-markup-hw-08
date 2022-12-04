@@ -51,7 +51,7 @@
     } 
   }
  
-  @media screen and (max-width: 767px ){
+  @media screen and (min-width: 480px){
      .our-strengths{
     width:450px;
     flex-direction: column;
