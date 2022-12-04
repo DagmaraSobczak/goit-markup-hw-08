@@ -9,16 +9,13 @@
     margin-bottom: 32px;
     margin-left: 93px;
 
-@media screen and (max-width:767px){
-.nav{
-    display: none;
-}
-}
+
+
 @media screen and (min-width:768px) {
     .nav {
     margin-right: 232px;
     margin-left: 83px;
-     gap: 60px; }
+    gap: 60px; }
     }
         
 @media screen and (min-width: 1200px) {
@@ -70,3 +67,8 @@
   }
 
 
+@media screen and (max-width:767px){
+.nav{
+    display: none;
+}
+}
