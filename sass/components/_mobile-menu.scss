@@ -3,7 +3,11 @@
    width: 100%;
    background: var(--white);
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-position: relative;
+  
+    position: fixed;
+    height: 100%;
+    top:0;
+
 
 }
 
@@ -13,12 +17,13 @@ position: relative;
     right: 25px;
     cursor: pointer;
     padding: 0;
-    margin-left: 15px;
+    
     margin-top: 10px;
     background-image: url(../image/close-black-18dp-2-1.svg);
     background-position: center;
     border: 0px solid rgba(0, 0, 0, 0.1);
-    position: absolute;
+   margin-left: 425px;
+    
     
 }
 
@@ -28,7 +33,10 @@ flex-direction: column;
 gap: 32px;
 list-style-type: none;
 max-width: 219px;
-padding-top: 48px;
+margin-bottom: 300px;
+padding-left: 0;
+text-align: left;
+
 
 
 
@@ -45,12 +53,20 @@ padding-top: 48px;
     color: #212121;
     margin-left: 40px;
 
-        &:hover {
-        color: var(--blue);
-        cursor: pointer;
+       
     
 }
+
+        &__link{
+        text-decoration: none;   
+        text-decoration-color:none; 
+
+         &:hover,
+         &:focus {
+        color: var(--blue);
+        cursor: pointer;}
 }
+
 
  
 
@@ -61,7 +77,10 @@ padding-top: 48px;
     gap: 32px;
     list-style-type: none;
     max-width: 307px;
-    padding-top: 302px;
+    margin-bottom: 44px;
+    
+    
+    
 
         &__item{
         font-family: 'Roboto';
@@ -91,7 +110,7 @@ display: flex;
 flex-direction: row;
 list-style-type: none;
 gap: 20px;
-padding-top: 64px;
+
 padding-bottom: 48px;
 text-decoration: none;
 
