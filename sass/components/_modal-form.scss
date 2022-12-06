@@ -1,17 +1,7 @@
 .modal-form {
     display: flex;
     flex-direction: column;
-    
-    @media screen and (max-width: 1199px){
-.modal-form {
-    width: 370px;
-    height: 342px;}}
-
-    @media screen and (min-width: 1200px){
- .modal-form {
-    width: 448px;
-    height: 342px;}}
- 
+       
   
   &__label {
     font-family: "Roboto";
@@ -55,25 +45,13 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
-   
-    @media screen and (max-width: 1199px){
-     &__input {
-    width: 370px;
-    height: 40px;
-        }}
-
-   @media screen and (min-width: 1200px){
-    &__input {
-    width: 448px;
-    height: 40px;    
-  }}
-
+ 
       &:hover,
       &:focus-within{
       border-color: var(--modal-blue);
       }
     
-}
+      }
   
   
       &__icon {
@@ -86,35 +64,7 @@
       transition-timing-function: var(--cubic-bezier);;
      }
   
-    @media screen and (max-width: 1199px){
-         &__icon1 {
-        top: 141px;
-        left: 50px;
-      }
-         &__icon2 {
-        top: 209px;
-        left: 52px;
-      }
-        &__icon3 {
-        top: 277px;
-        left: 52px;
-      }}
-
-      @media screen and (min-width: 1200px){
-        &__icon1 {
-        top: 104px;
-        left: 50px;
-      }
-    
-      &__icon2 {
-        top: 172px;
-        left: 52px;
-      }
-      
-      &__icon3 {
-        top: 240px;
-        left: 52px;
-      }}
+  
   
   &__comments {
    
@@ -138,16 +88,64 @@
         }
 }
   
+
+}
 @media screen and (max-width: 1199px){
-     &__comments {
+.modal-form {
+    width: 370px;
+    height: 342px;
+  
+     &__input {
+    width: 370px;
+    height: 40px;
+        }
+       &__icon1 {
+        top: 141px;
+        left: 50px;
+      }
+         &__icon2 {
+        top: 209px;
+        left: 52px;
+      }
+        &__icon3 {
+        top: 277px;
+        left: 52px;
+      }
+
+        &__comments {
     width: 370px;
     height: 120px;
     }
-  }
-@media screen and (min-width: 1200px){
-  &__comments {
+      }
+    }
+
+    @media screen and (min-width: 1200px){
+ .modal-form {
+    width: 448px;
+    height: 342px;
+  
+    &__input {
+    width: 448px;
+    height: 40px;    
+    }
+      &__icon1 {
+        top: 104px;
+        left: 50px;
+      }
+    
+      &__icon2 {
+        top: 172px;
+        left: 52px;
+      }
+      
+      &__icon3 {
+        top: 240px;
+        left: 52px;
+      }
+    
+      &__comments {
     width: 448px;
     height: 120px;
 }
 }
-}
+    }
