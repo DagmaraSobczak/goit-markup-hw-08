@@ -16,6 +16,8 @@
     align-content: space-between;
     gap: 30px;
     margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
     }
 @media screen and (min-width: 480px){
 .our-team {
