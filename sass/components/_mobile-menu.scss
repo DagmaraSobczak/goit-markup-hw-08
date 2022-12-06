@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px ){
+
 .mobile-menu{
    width: 100%;
    background: var(--white);
@@ -82,7 +82,8 @@ position: relative;
     list-style-type: none;
     max-width: 307px;
     margin-bottom: 44px;
-    position: relative;
+    position: fixed;
+    
     
     
     
@@ -120,6 +121,7 @@ text-decoration: none;
 position: sticky;
 bottom: 0;
 
+
         &__item{
         font-family: 'Roboto';
         font-style: normal;
@@ -136,7 +138,7 @@ bottom: 0;
 }
 
 
-}
+
 
 
 @media screen and (min-width: 768px ){
