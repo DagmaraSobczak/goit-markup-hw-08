@@ -52,7 +52,7 @@
 @media screen and (min-width: 480px){
 .our-client {
      flex-wrap: wrap;
-     width: 450px;
+     max-width: 450px;
     
 
     &__item {
