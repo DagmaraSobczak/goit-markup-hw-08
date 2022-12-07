@@ -22,10 +22,11 @@
     cursor: pointer;
     padding: 0;
         margin-top: 10px;
-   
+   background-color: white;
     fill: var(--black);
     border: 0px solid rgba(0, 0, 0, 0.1);
-    
+    margin-top: 0;
+    margin-bottom: 0;
    
    position: absolute;
    transition-property: fill;
