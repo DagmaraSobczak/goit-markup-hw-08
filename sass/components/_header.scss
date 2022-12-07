@@ -45,6 +45,11 @@
   padding-left: 0;
   padding-right: 0;
   justify-content: end;
+
+    &:hover svg {
+       fill: var(--blue);
+      cursor: pointer;
+       }
   
  
 
