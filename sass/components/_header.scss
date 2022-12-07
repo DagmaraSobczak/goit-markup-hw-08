@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 480px){
   .header{
-  max-width: 480px;
+  max-width: 100%;
     margin: 0 auto;
   }
   }
@@ -23,14 +23,14 @@
 
 @media screen and (min-width: 768px ){
  .header{
-  max-width: 768px;
+  max-width: 100%;
   justify-content: space-between;
  }
 }
 
 @media screen and (min-width: 1200px ){
  .header{
-  max-width: 1200px;
+  max-width: 100%;
  }
 }
 
@@ -48,7 +48,7 @@
   transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
+    
     
     &:hover svg {
        fill: var(--blue);
