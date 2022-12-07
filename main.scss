@@ -1,9 +1,3 @@
-@import "./sass/utils/d-none.scss";
-@import "./sass/utils/is hidden.scss";
-@import "./sass/utils/reset";
-@import "./sass/utils/vars";
-
-
 @import "./sass/components/backdrop";
 @import "./sass/components/baner";
 @import "./sass/components/body";
@@ -32,3 +26,8 @@
 @import "./sass/components/section";
 @import "./sass/components/social-list";
 @import "./sass/components/what-we-do";
+
+@import "./sass/utils/d-none.scss";
+@import "./sass/utils/is hidden.scss";
+@import "./sass/utils/reset";
+@import "./sass/utils/vars";
