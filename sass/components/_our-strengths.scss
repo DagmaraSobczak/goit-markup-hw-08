@@ -6,6 +6,7 @@
     width: 100%;
     flex-direction: column;
     margin: 0 auto;
+   
     
 
     @mixin ul {
@@ -20,6 +21,8 @@
       border-radius: 4px;
       margin-bottom: 30px;
       width: 100%;
+      display: flex;
+      justify-content: center;
     
           }
 
@@ -29,8 +32,7 @@
       height: 70px;
       margin-top: 20px;
       margin-bottom: 20px;
-   margin-left: 50%;
-   margin-right: 50%;
+   
     
     
       
