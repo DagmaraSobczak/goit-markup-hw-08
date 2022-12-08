@@ -10,30 +10,13 @@
     margin-left: 93px;
 
 
-
-@media screen and (min-width:768px) {
-    .nav {
-    margin-right: 232px;
-    margin-left: 83px;
-    gap: 60px; }
-    margin-right: 101px;
-    }
-        
-@media screen and (min-width: 1200px) {
- .nav {
-       width: 254px;
-        margin-right: 345px;
-       margin-left: 93px;
-         }
-  }
-   
-
-    @mixin ul {
+ @mixin ul {
         list-style-type: none;
         padding: 0;
       }
       
     @include ul;
+
 
     &__menu {
         font-size: 14px;
@@ -65,7 +48,26 @@
             }
         }
   }
+}
+  @media screen and (min-width:768px) {
+    .nav {
+    margin-right: 232px;
+    margin-left: 83px;
+    gap: 60px; 
+    margin-right: 101px;}
+    }
+        
+@media screen and (min-width: 1200px) {
+ .nav {
+       width: 254px;
+        margin-right: 345px;
+       margin-left: 93px;
+         }
   }
+   
+
+   
+  
 
 
 @media screen and (max-width:767px){
